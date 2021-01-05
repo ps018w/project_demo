@@ -20,7 +20,7 @@ user_email_list = []
         if user[email_index] == ' ' + old_domain:
           user[email_index] = ' ' + new_domain
   f.close()
-
+#added comments
   with open(report_file, 'w+') as output_file:
     writer = csv.writer(output_file)
     writer.writerows(user_data_list)
